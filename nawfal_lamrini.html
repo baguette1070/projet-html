@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML project</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Projet - HTML</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="nawfal_lamrini.html">Nawfal</a></li>
+            <li><a href="ilias_himi.html">Ilias</a></li>
+            <li><a href="rayane_filali.html">Rayane</a></li>
+            <li><a href="ismael_arbai.html">Ismael</a></li>
+            <li><a href="nassim_karim.html">Nassim</a></li>
+            <li><a href="youness_khadri.html">Youness</a></li>
+        </ul>
+    </nav>
+
+    <main class="mainDebian">
+        <section class="containerDebian">
+            <div class="contentBox" id="box1">
+                <h2>Présentation</h2>
+                <p>Debian est une distribution Linux largement utilisée, connue pour sa stabilité et son vaste écosystème de logiciels.</p>
+                <a href="https://www.debian.org/index.fr.html" target="_blank">
+                    <img src="./assets/debian/Debian-logo.png" alt="Debian-logo">
+                </a>
+                <p>Cliquez sur le logo juste au dessus pour aller sur le site officiel</p>
+            </div>
+
+            <div class="contentBox" id="box2">
+                <h2>Caractéristiques</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Caractéristique</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Origine</td>
+                            <td>1993, Ian Murdock</td>
+                        </tr>
+                        <tr>
+                            <td>Basé sur</td>
+                            <td>Indépendant</td>
+                        </tr>
+                        <tr>
+                            <td>Popularité</td>
+                            <td>Très populaire, utilisé comme base pour Ubuntu</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="contentBox" id="box3">
+                <h2>Avantages de Debian</h2>
+                <ol>
+                    <li>Très stable</li>
+                    <li>Grande communauté</li>
+                    <li>Vaste dépôt de logiciels</li>
+                    <li>Support pour de nombreuses architectures matérielles</li>
+                </ol>
+                <p>Apprenez en plus sur les raisons pour lesquelles vous devriez utiliser debian</p>
+                <a href="https://www.debian.org/intro/why_debian.fr.html#:~:text=Debian%20est%20une%20distribution%20faite,d'exploitation%20stable%20et%20s%C3%BBr." target="_blank">En cliquant ici</a>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- exemple.php => exemple of backend file -->
+         <section class="formDebian">
+            <h2>Donnez nous votre avis sur Debian</h2>
+            <div>
+                <form action="exemple.php" method="post">
+                    <label for="email">Votre email :</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="comment">Votre commentaire :</label><br>
+                    <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projet HTML - Lamrini Nawfal, Himi Ilias, Filali Rayane, Arbai Ismael, Karim Nassim, Khadri Youness</p>
+    </footer>
+</body>
+</html>
