@@ -370,6 +370,7 @@ footer {
 
 .thirdSection h2{
     text-align: center;
+    color: #294172;
 }
 
 .thirdSection div{
@@ -404,7 +405,7 @@ footer {
     color: #294172;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.2s;
 }
 
 .tableFedora td a:hover{
@@ -472,4 +473,180 @@ footer {
 
 .formFedora button:active {
     background-color: #294172;
+}
+
+
+/****HIMI ILIAS****/
+
+
+
+.ubuntu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 20px ;
+}
+
+
+.ubuntu img {
+    transition: background-color 0.3s;
+    width: 150px;
+}
+
+.ubuntu img:hover{
+    background-color: #ebe8e8;
+}
+
+.ubuntu .subtitle {
+    font-size: 1.8em;
+    font-weight: bold;
+    flex: 1;
+
+}
+
+.containerUbuntu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 10px;
+    margin: 50px;
+    font-size: 17px;
+}
+
+.box{
+    background-color: #ebe8e8;
+    border-radius: 10px;
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.one {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    
+}
+
+.two {
+    grid-column: 2 / 3;
+
+}
+
+.three {
+    grid-column: 3 / 4;
+
+}
+
+.four {
+    grid-column: 2 / 4;
+    grid-row: 2;
+}
+
+.five{
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+
+.six{
+    grid-column: 3 / 4;
+    grid-row: 3;
+}
+
+
+.box.six p {
+    text-align: center;
+}
+
+.box.six p a:hover{
+    text-decoration: none;
+}
+
+.box.six p a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+.formUbuntu h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.formUbuntu {
+
+    background-color: #ffffff;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    font-size: 20px;
+}
+
+
+.formUbuntu legend {
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #65abe0;
+    color: white;
+}
+
+.formUbuntu fieldset {
+    border: 2px solid black;
+    background-color:#ebe8e8;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.formUbuntu input[type="text"],
+.formUbuntu textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+
+.formUbuntu button{
+    background-color: #65abe0;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    transition: background-color 0.3s;
+}
+
+.formUbuntu button:hover {
+    background-color:#3a6b91;
+}
+
+.tableUbuntu{
+    border-collapse: collapse;
+    width: 95%;
+    margin-top: 10px; 
+}
+
+.tableUbuntu caption{
+    padding: 12px;
+}
+
+.tableUbuntu th,
+.tableUbuntu td {
+    padding: 6px;
+    border: 1px solid black;
+    text-align: left;
+    background-color: white;
 }
