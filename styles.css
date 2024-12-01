@@ -182,7 +182,7 @@ footer {
     font-size: 20px;
 }
 
-/*Responsive*/
+/*Responsive Debian*/
 /*for 1024 px*/
 @media (max-width: 1024px) {
     .containerDebian {
@@ -282,9 +282,7 @@ footer {
     padding: 2em;
     margin: 2em auto;
     max-width: 800px;
-    background: white;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 20px;
     background-color: #ebe8e8;
     box-shadow: 10px 5px 5px grey;
@@ -350,9 +348,7 @@ footer {
     padding: 2em;
     margin: 2em auto;
     max-width: 800px;
-    background: white;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 20px;
     background-color: #ebe8e8;
     box-shadow: 10px 5px 5px grey;
@@ -553,6 +549,11 @@ footer {
 
 /****HIMI ILIAS****/
 
+.mainUbuntu {
+    padding: 20px;
+    margin: auto;
+    max-width: 1200px;
+}
 
 .ubuntu {
     display: flex;
@@ -560,6 +561,10 @@ footer {
     justify-content: space-between;
     text-align: center;
     margin: 20px ;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -576,17 +581,17 @@ footer {
     font-size: 1.8em;
     font-weight: bold;
     flex: 1;
-
 }
 
 .containerUbuntu{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px 100px;
-    grid-gap: 10px;
-    margin: 50px;
+    grid-template-rows: 140px 140px 140px;
+    grid-gap: 20px;
+    margin: 50px ;
     font-size: 17px;
 }
+
 
 .box{
     background-color: #ebe8e8;
@@ -595,12 +600,20 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+    transform: translateY(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .one {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    
+
 }
 
 .two {
@@ -642,6 +655,30 @@ footer {
     margin-top: 10px;
 }
 
+.tableUbuntu{
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+}
+
+
+.tableUbuntu caption{
+    padding: 12px;
+    font-weight: bold;
+    background-color: #294172;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.tableUbuntu th,
+.tableUbuntu td {
+    padding: 8px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
+}
+
 
 .formUbuntu h3{
     text-align: center;
@@ -678,7 +715,7 @@ footer {
     margin-bottom: 20px;
 }
 
-.formUbuntu input[type="text"],
+.formUbuntu input[type="email"],
 .formUbuntu textarea {
     width: 95%;
     padding: 10px;
@@ -688,6 +725,10 @@ footer {
     font-size: 1em;
 }
 
+
+.formUbuntu input[type="radio"] {
+    margin-right: 5px;
+}
 
 .formUbuntu button{
     background-color: #65abe0;
@@ -704,23 +745,111 @@ footer {
 }
 
 .formUbuntu button:hover {
-    background-color:#3a6b91;
+    background-color:#294172;
 }
 
-.tableUbuntu{
-    border-collapse: collapse;
-    width: 95%;
-    margin-top: 10px; 
+
+
+
+/*for 1024 px screen*/
+@media (max-width: 1024px) {
+    .mainUbuntu {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .ubuntu {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .ubuntu img {
+        width: 130px;
+    }
+
+    .ubuntu .subtitle {
+        font-size: 1.6em;
+    }
+
+    .containerUbuntu {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 15px;
+    }
+
+    .formUbuntu {
+        width: 85%;
+    }
+
+    .tableUbuntu th,
+    .tableUbuntu td {
+        font-size: 0.95em;
+    }
 }
 
-.tableUbuntu caption{
-    padding: 12px;
+/*for 768 px screen*/
+@media (max-width: 768px) {
+    .containerUbuntu {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    .ubuntu img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .ubuntu .subtitle {
+        font-size: 1.4em;
+    }
+
+    .formUbuntu {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+    .formUbuntu button {
+        padding: 10px;
+        font-size: 0.85em;
+    }
+
+    .tableUbuntu th,
+    .tableUbuntu td {
+        font-size: 0.85em;
+        padding: 6px;
+    }
 }
 
-.tableUbuntu th,
-.tableUbuntu td {
-    padding: 6px;
-    border: 1px solid black;
-    text-align: left;
-    background-color: white;
+/*for 480 px screen*/
+@media (max-width: 480px) {
+    .ubuntu img {
+        width: 80px;
+    }
+
+    .ubuntu .subtitle {
+        font-size: 1.2em;
+    }
+
+    .containerUbuntu {
+        grid-template-columns: 1fr;
+        grid-gap: 8px;
+    }
+
+    .formUbuntu {
+        width: 95%;
+        font-size: 0.85em;
+    }
+
+    .formUbuntu button {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    .tableUbuntu th,
+    .tableUbuntu td {
+        font-size: 0.8em;
+    }
 }
+
+
