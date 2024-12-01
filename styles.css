@@ -476,8 +476,82 @@ footer {
 }
 
 
-/****HIMI ILIAS****/
+/**Responsive Fedora**/
+/***for 1024***/
+@media (max-width: 1024px) {
+    .firstSection, .secondSection, .thirdSection, .formFedora {
+        max-width: 90%;
+        padding: 1.5em;
+        margin: 1.5em auto;
+    }
 
+    .benefit-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .tableFedora {
+        width: 100%;
+    }
+
+    .formFedora {
+        width: 80%;
+    }
+}
+
+/***for 768px***/
+@media (max-width: 768px) {
+    .firstSection h2, .secondSection h2, .thirdSection h2 {
+        font-size: 1.5em;
+    }
+
+    .firstSection img {
+        width: 150px;
+    }
+
+    .card h3 {
+        font-size: 1.2em;
+    }
+
+    .card p {
+        font-size: 0.9em;
+    }
+
+    .formFedora div input {
+        width: 100%;
+    }
+
+    .formFedora button {
+        font-size: 0.9em;
+    }
+}
+
+/***for 480px***/
+@media (max-width: 480px) {
+    .firstSection img {
+        width: 120px;
+    }
+
+    .firstSection, .secondSection, .thirdSection, .formFedora {
+        padding: 1em;
+    }
+
+    .tableFedora th, .tableFedora td {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    .formFedora button {
+        font-size: 0.8em;
+    }
+}
+
+
+/****HIMI ILIAS****/
 
 
 .ubuntu {
