@@ -91,11 +91,12 @@ header h1 {
 .contentBox img {
     width: 150px;
     margin: 10px 0;
-    transition: background-color 0.3s;
+    transition: transform 0.3s;
 }
 
 .contentBox img:hover{
-    background-color: grey;
+    transform: scale(1.1);
+    background: #ddd;
 }
 
 #box3 p{
@@ -135,13 +136,14 @@ header h1 {
     border: 1px solid black;
     border-radius: 12px;
     font-size: 20px;
-    padding: 15px;
+    padding: 20px;
 }
 
 .formDebian div form input,
 .formDebian div form textarea
 {
     font-size: 16px;
+    padding: 5px;
     width: 100%;
     border: 1px solid black;
 }
@@ -182,7 +184,7 @@ footer {
     font-size: 20px;
 }
 
-/*Responsive Debian*/
+/*Responsive*/
 /*for 1024 px*/
 @media (max-width: 1024px) {
     .containerDebian {
@@ -282,7 +284,9 @@ footer {
     padding: 2em;
     margin: 2em auto;
     max-width: 800px;
+    background: white;
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 20px;
     background-color: #ebe8e8;
     box-shadow: 10px 5px 5px grey;
@@ -348,7 +352,9 @@ footer {
     padding: 2em;
     margin: 2em auto;
     max-width: 800px;
+    background: white;
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 20px;
     background-color: #ebe8e8;
     box-shadow: 10px 5px 5px grey;
@@ -385,7 +391,7 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.tableFedora th, 
+.tableFedora th,
 .tableFedora td {
     border: 1px solid #ddd;
     padding: 12px 15px;
@@ -555,7 +561,7 @@ footer {
     max-width: 1200px;
 }
 
-.ubuntu {
+.firstSectionUbuntu {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -568,22 +574,43 @@ footer {
 }
 
 
-.ubuntu img {
+.firstSectionUbuntu img {
     transition: background-color 0.3s;
     width: 150px;
 }
 
-.ubuntu img:hover{
+.firstSectionUbuntu img:hover{
     background-color: #ebe8e8;
 }
 
-.ubuntu .subtitle {
+.subtitle {
     font-size: 1.8em;
     font-weight: bold;
     flex: 1;
 }
 
-.containerUbuntu{
+
+.secondSectionUbuntu{
+    margin: 50px ;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.headerBox {
+    background-color: #294172;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.containerBox{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 140px 140px 140px;
@@ -613,17 +640,14 @@ footer {
 .one {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-
 }
 
 .two {
     grid-column: 2 / 3;
-
 }
 
 .three {
     grid-column: 3 / 4;
-
 }
 
 .four {
@@ -632,28 +656,10 @@ footer {
 }
 
 .five{
-    grid-column: 1 / 3;
+    grid-column: 1/4;
     grid-row: 3;
 }
 
-.six{
-    grid-column: 3 / 4;
-    grid-row: 3;
-}
-
-
-.box.six p {
-    text-align: center;
-}
-
-.box.six p a:hover{
-    text-decoration: none;
-}
-
-.box.six p a {
-    display: inline-block;
-    margin-top: 10px;
-}
 
 .tableUbuntu{
     border-collapse: collapse;
@@ -680,20 +686,46 @@ footer {
 }
 
 
+.lastSectionUbuntu {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    margin:  auto;
+    margin-bottom: 100px;
+    max-width: 800px;
+    text-align: center;
+}
+
+
+.lastSectionUbuntu p {
+    font-size: 1.2em;
+    line-height: 1.7;
+}
+
+.lastSectionUbuntu p a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.lastSectionUbuntu p a:hover {
+    text-decoration: none;
+}
+
+
 .formUbuntu h3{
     text-align: center;
     margin-bottom: 10px;
 }
 
 .formUbuntu {
-
     background-color: #ffffff;
     border: 2px solid black;
     border-radius: 20px;
     padding: 20px;
     width: 80%;
     max-width: 500px;
-    margin: 20px auto;
+    margin: auto;
     font-size: 20px;
 }
 
@@ -749,107 +781,579 @@ footer {
 }
 
 
-
-
 /*for 1024 px screen*/
 @media (max-width: 1024px) {
     .mainUbuntu {
         padding: 15px;
-        max-width: 90%;
+        max-width: 1000px;
     }
 
-    .ubuntu {
+    .firstSectionUbuntu {
         flex-direction: column;
         text-align: center;
-        gap: 15px;
     }
 
-    .ubuntu img {
-        width: 130px;
+    .firstSectionUbuntu img {
+        width: 120px;
     }
 
-    .ubuntu .subtitle {
-        font-size: 1.6em;
+    .firstSectionUbuntu .subtitle {
+        font-size: 1.5em;
     }
 
-    .containerUbuntu {
+    .containerBox {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        grid-gap: 15px;
+    }
+
+    .box.five {
+        grid-column: 1 / 3;
+    }
+}
+
+
+/*for 768 px screen*/
+@media (max-width: 768px) {
+    .mainUbuntu {
+        padding: 10px;
+        max-width: 750px;
+    }
+
+    .firstSectionUbuntu img {
+        width: 100px;
+    }
+
+    .firstSectionUbuntu .subtitle {
+        font-size: 1.3em;
+    }
+
+    .containerBox {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .box {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .headerBox {
+        font-size: 20px;
+        padding: 20px;
     }
 
     .formUbuntu {
-        width: 85%;
+        width: 90%;
+    }
+}
+
+
+/*for 480 px screen*/
+@media (max-width: 480px) {
+    .mainUbuntu {
+        padding: 5px;
+        max-width: 100%;
     }
 
-    .tableUbuntu th,
-    .tableUbuntu td {
-        font-size: 0.95em;
+    .firstSectionUbuntu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .firstSectionUbuntu img {
+        width: 80px;
+    }
+
+    .firstSectionUbuntu .subtitle {
+        font-size: 1.2em;
+    }
+
+    .containerBox {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .box {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .headerBox {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .formUbuntu {
+        width: 100%;
+    }
+
+    .formUbuntu button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
+
+
+
+/***KARIM NASSIM***/
+
+.puppylinuxMainContent {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.puppylinuxOverview {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+
+.puppylinuxInfoBox {
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.puppylinuxInfoBox h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.puppylinuxInfoBox p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.puppylinuxInfoBox table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.puppylinuxInfoBox th,
+.puppylinuxInfoBox td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.puppylinuxInfoBox ol {
+    list-style-type: decimal;
+    padding-left: 30px;
+}
+
+.puppylinuxInfoBox img {
+    width: 100px;
+    margin: 10px 0;
+    transition: transform 0.3s;
+}
+
+.puppylinuxInfoBox img:hover {
+    transform: scale(1.1);
+}
+
+.puppylinuxInfoBox a {
+    text-decoration: none;
+    color: #4584b1;
+}
+
+.puppylinuxInfoBox a:hover {
+    text-decoration: underline;
+}
+
+.puppylinuxFeedbackForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.puppylinuxFormContainer form {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.puppylinuxFormContainer label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.puppylinuxFormContainer input,
+.puppylinuxFormContainer textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.puppylinuxFormContainer button {
+    background-color: #294172;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.puppylinuxFormContainer button:hover {
+    background-color: #3a6b91;
+    cursor: pointer;
+}
+
+/* responsive puppy linux */
+
+/* For 1024 px */
+@media (max-width: 1024px) {
+    .puppylinuxMainContent {
+        width: 90%;
+    }
+
+    .puppylinuxOverview {
+        width: 100%;
+    }
+
+    .puppylinuxInfoBox {
+        width: 100%;
+    }
+}
+
+/* For 768 px */
+@media (max-width: 768px) {
+
+    .puppylinuxInfoBox {
+        width: 100%;
+    }
+
+    .puppylinuxFormContainer form {
+        font-size: 18px;
+    }
+}
+
+/* For 480 px */
+@media (max-width: 480px) {
+    .puppylinuxInfoBox {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .puppylinuxFormContainer form {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .puppylinuxFormContainer button {
+        font-size: 16px;
+        width: 70%;
+    }
+}
+
+
+
+/**********youness khadr**********/
+
+/* Main container */
+.mainAntiX {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Presentation section*/
+.firstBox {
+    background-color: #ebe8e8;
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 800px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.firstBox h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.firstBox p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+
+.logoAntiX {
+    font-size: 1.6rem;
+    color: #294172;
+    margin: 30px ;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.firstBox img:hover{
+    background-color: #294172;
+}
+
+
+.firstBox:hover {
+    transform: translateY(-5px);
+}
+
+/* Features section */
+.SecondBox {
+    background-color: #ebe8e8;
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 60%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.SecondBox:hover {
+    transform: translateY(-5px);
+}
+
+
+.SecondBox h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tableAntiX {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableAntiX th,
+.tableAntiX td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+.tableAntiX th {
+    background-color: #294172;
+    color: white;
+    font-weight: bold;
+}
+
+.tableAntiX tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Download section */
+.LastBox {
+    background-color: #ebe8e8;
+    padding: 30px;
+    margin-bottom: 100px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.LastBox h4 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.LastBox p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.LastBox a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.LastBox a:hover {
+    color: #0056b3;
+}
+
+
+/* form */
+.formAntiX {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid black;
+    max-width: 400px;
+
+}
+
+.formAntiX h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.formAntiX input[type="email"],
+.formAntiX input[type="text"],
+.formAntiX textarea {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+
+.formAntiX button {
+    padding: 15px;
+    background-color: #294172;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: block;
+    margin: auto;
+    transition: background-color 0.3s;
+}
+
+.formAntiX button:hover {
+    background-color:#65abe0;
+}
+
+
+
+/*for 1024 px screen*/
+@media (max-width: 1024px) {
+    .mainAntiX {
+        padding: 20px;
+    }
+
+    .firstBox,
+    .SecondBox,
+    .LastBox {
+        max-width: 90%;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+    .firstBox h2, .SecondBox h3, .LastBox h4 {
+        font-size: 2rem;
+    }
+
+    .logoAntiX {
+        font-size: 1.4rem;
+    }
+
+    .formAntiX {
+        max-width: 90%;
+        padding: 20px;
     }
 }
 
 /*for 768 px screen*/
 @media (max-width: 768px) {
-    .containerUbuntu {
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
+    .mainAntiX {
+        padding: 15px;
     }
 
-    .ubuntu img {
-        width: 100px;
-        margin-bottom: 10px;
+    .firstBox,
+    .SecondBox,
+    .LastBox {
+        max-width: 95%;
+        padding: 15px;
+        margin-bottom: 30px;
     }
 
-    .ubuntu .subtitle {
-        font-size: 1.4em;
+    .firstBox h2, .SecondBox h3, .LastBox h4 {
+        font-size: 1.8rem;
     }
 
-    .formUbuntu {
-        width: 90%;
-        font-size: 0.9em;
-    }
-
-    .formUbuntu button {
+    .tableAntiX th, .tableAntiX td {
         padding: 10px;
-        font-size: 0.85em;
+        font-size: 0.9rem;
     }
 
-    .tableUbuntu th,
-    .tableUbuntu td {
-        font-size: 0.85em;
-        padding: 6px;
+    .logoAntiX {
+        font-size: 1.2rem;
+    }
+
+    .formAntiX {
+        max-width: 95%;
+        padding: 15px;
     }
 }
 
 /*for 480 px screen*/
 @media (max-width: 480px) {
-    .ubuntu img {
-        width: 80px;
+    .mainAntiX {
+        padding: 10px;
     }
 
-    .ubuntu .subtitle {
-        font-size: 1.2em;
+    .firstBox,
+    .SecondBox,
+    .LastBox {
+        max-width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
     }
 
-    .containerUbuntu {
-        grid-template-columns: 1fr;
-        grid-gap: 8px;
+    .firstBox h2, .SecondBox h3, .LastBox h4 {
+        font-size: 1.5rem;
     }
 
-    .formUbuntu {
-        width: 95%;
-        font-size: 0.85em;
+    .firstBox p, .LastBox p {
+        font-size: 1rem;
     }
 
-    .formUbuntu button {
-        font-size: 0.8em;
+    .tableAntiX th, .tableAntiX td {
         padding: 8px;
+        font-size: 0.8rem;
     }
 
-    .tableUbuntu th,
-    .tableUbuntu td {
-        font-size: 0.8em;
+    .logoAntiX {
+        font-size: 1rem;
+    }
+
+    .formAntiX {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .formAntiX h3 {
+        font-size: 1.6rem;
+    }
+
+    .formAntiX input[type="email"],
+    .formAntiX input[type="text"],
+    .formAntiX textarea {
+        font-size: 0.9rem;
+    }
+
+    .formAntiX button {
+        font-size: 1rem;
     }
 }
-
-

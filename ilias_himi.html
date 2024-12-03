@@ -8,10 +8,13 @@
 </head>
 <body>
 
+<!-- header for the page-->
 <header>
     <h1 class="title">Projet - HTML</h1>
 </header>
 
+
+<!--navigation bar-->
 <nav class="navbar">
     <ul>
         <li><a href="nawfal_lamrini.html">Nawfal</a></li>
@@ -25,25 +28,30 @@
 
 
 <main class="mainUbuntu">
-
-
-    <section class="ubuntu">
+    <!--introduction to Ubuntu-->
+    <section class="firstSectionUbuntu">
         <a href="https://ubuntu.com/" target="_blank">
             <img src="./assets/ubuntu/ubuntu-logo.png" title="Cliquer dessus pour visiter le site officiel d'Ubuntu"
                  alt="ubuntu-logo">
         </a>
-        <h2 class="subtitle">
+        <div class="subtitle">
             Ubuntu est une distribution Linux populaire basée sur Debian, reconnue pour sa simplicité et
             sa convivialité.
-        </h2>
+        </div>
     </section>
 
 
 
-    <div>
-        <div class="containerUbuntu">
+    <!--ubuntu features -->
+    <section class="secondSectionUbuntu">
+        <div class="headerBox">
+            <h2>Caractéristiques</h2>
+        </div>
+
+        <div class="containerBox">
 
             <div class="box one">
+                <!--comparative advantages and disadvantages-->
                 <table class="tableUbuntu">
                     <caption>Comparatif des avantages et inconvénients d'Ubuntu</caption>
                     <thead>
@@ -71,24 +79,33 @@
                 </table>
 
             </div>
-            <div class="box two">Ubuntu a été fondé par Mark Shuttleworth en 2004</div>
-            <div class="box three">Elle dispose d'une large communauté d'entraide</div>
+            <div class="box two">Ubuntu a été fondé par Mark Shuttleworth en 2004.</div>
+            <div class="box three">Elle dispose d'une large communauté d'entraide.</div>
             <div class="box four">
                 Son interface est conviviale grâce à GNOME, un environnement graphique simple et intuitif pour
-                les utilisateurs de Linux
+                les utilisateurs de Linux.
             </div>
             <div class="box five">
-                Elle est livré avec des applications populaires comme Firefox, LibreOffice, et Thunderbird, prêtes à l’emploi</div>
-            <div class="box six">
-                <p>
-                    Pour découvrir davantage sur Ubuntu et ses fonctionnalités <br>
-                    <a href="https://www.malekal.com/quest-ce-que-ubuntu-raisons-utiliser/" target="_blank">Cliquez ici</a>
-                </p>
-            </div>
+                Elle est livré avec des applications populaires comme Firefox, LibreOffice, et Thunderbird, prêtes à l’emploi.</div>
+
 
         </div>
-    </div>
+    </section>
 
+    <!--link to another site-->
+    <section class="lastSectionUbuntu">
+        <h2 class="headerBox">En savoir plus sur Ubuntu</h2>
+        <p>
+            Pour en apprendre davantage sur Ubuntu, ses fonctionnalités et les raisons de sa popularité<br>
+            <a href="https://www.malekal.com/quest-ce-que-ubuntu-raisons-utiliser/" target="_blank">cliquez ici</a>.
+        </p>
+    </section>
+
+
+
+
+
+    <!-- Feedback form for users -->
     <form class="formUbuntu" method="post" action="#">
         <h3>Donnez nous votre avis sur Ubuntu</h3>
         <fieldset>
@@ -100,7 +117,7 @@
         <fieldset>
             <legend>Votre avis</legend>
             <p>
-                Trouvez-vous que Ubuntu est une bonne distribution Linux ?<br>
+                Trouvez-vous qu'Ubunto est une bonne distribution Linus ?<br>
                 <input type="radio" name="avis" value="Oui" id="Oui" > <label for="Oui">Oui</label><br>
                 <input type="radio" name="avis" value="Non" id="Non" > <label for="Non">Non</label><br>
                 <input type="radio" name="avis" value="Aucun" id="Aucun"> <label for="Aucun">Pas d'avis</label><br>
@@ -117,6 +134,7 @@
 
 </main>
 
+<!-- footer for the page-->
 <footer>
     <p>Projet HTML - Lamrini Nawfal, Himi Ilias, Filali Rayane, Arbai Ismael, Karim Nassim, Khadri Youness</p>
 </footer>
