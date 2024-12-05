@@ -6,26 +6,88 @@
     <link rel="stylesheet" href="styles.css">
     <title>HTML project</title>
 </head>
-<body>
+<body class="bodyLinuxMint">
 
-<header>
-    <h1 class="title">Projet - HTML</h1>
-</header>
+    <header>
+        <h1 class="title">Projet - HTML</h1>
+    </header>
 
-<nav class="navbar">
-    <ul>
-        <li><a href="nawfal_lamrini.html">Nawfal</a></li>
-        <li><a href="ilias_himi.html">Ilias</a></li>
-        <li><a href="rayane_filali.html">Rayane</a></li>
-        <li><a href="ismael_arbai.html">Ismael</a></li>
-        <li><a href="nassim_karim.html">Nassim</a></li>
-        <li><a href="youness_khadri.html">Youness</a></li>
-    </ul>
-</nav>
+    <nav class="navbar">
+        <ul>
+            <li><a href="nawfal_lamrini.html">Debian</a></li>
+            <li><a href="ilias_himi.html">Ubuntu</a></li>
+            <li><a href="rayane_filali.html">Linux Mint</a></li>
+            <li><a href="ismael_arbai.html">Fedora</a></li>
+            <li><a href="nassim_karim.html">Puppy Linux</a></li>
+            <li><a href="youness_khadri.html">AntiX</a></li>
+        </ul>
+    </nav>
 
-<footer>
-    <p>Lamrini Nawfal - Himi Ilias - Filali Rayane - Arbai Ismael - Karim Nassim - Khadri Youness</p>
-</footer>
+
+    <main class="mainLinuxMint">
+        <section id="presentation" class="sectionLinuxMint">
+            <h2 class="subtitleLinuxMint">Présentation</h2>
+            <p class="textLinuxMint">
+                Linux Mint est une distribution Linux populaire basée sur Ubuntu et Debian.
+                Elle est reconnue pour sa simplicité d'utilisation, sa stabilité et son élégante interface utilisateur.
+            </p>
+            <a href="https://linuxmint.com" target="_blank">
+                <img class="imageLinuxMint" src="./assets/linuxMint/linux-mint.png" alt="Logo Linux Mint"  title="Cliquez sur le logo">
+            </a>
+        </section>
+
+        <section id="caracteristiques" class="sectionLinuxMint">
+            <h2 class="subtitleLinuxMint">Caractéristiques</h2>
+            <table class="tableLinuxMint">
+                <tr>
+                    <th>Caractéristique</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Origine</td>
+                    <td>2006</td>
+                </tr>
+                <tr>
+                    <td>Basé sur</td>
+                    <td>Ubuntu/Debian</td>
+                </tr>
+                <tr>
+                    <td>Interface</td>
+                    <td>Cinnamon, MATE, XFCE</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="avantages" class="sectionLinuxMint">
+            <h2 class="subtitleLinuxMint">Avantages de Linux Mint</h2>
+            <ul class="listLinuxMint">
+                <li>Interface conviviale et moderne.</li>
+                <li>Support pour une large gamme de matériel.</li>
+                <li>Pré-installation de nombreux logiciels utiles.</li>
+                <li>Gratuit et open-source.</li>
+            </ul>
+        </section>
+
+        <section id="avis" class="sectionLinuxMint">
+            <h2 class="subtitleLinuxMint">Donnez-nous votre avis sur Linux Mint</h2>
+            <form class="formLinuxMint" action="#" method="post">
+                <label for="email" class="labelLinuxMint">Votre email :</label>
+                <input type="email" id="email" name="email" class="inputLinuxMint" required>
+
+                <label for="password">Votre mot de passe :</label>
+                <input type="password" id="password" name="password" class="inputLinuxMint" required>
+
+                <label for="commentaire" class="labelLinuxMint">Votre commentaire :</label>
+                <textarea id="commentaire" name="commentaire" class="textareaLinuxMint" rows="5" required></textarea>
+
+                <button type="submit" class="buttonLinuxMint">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Lamrini Nawfal - Himi Ilias - Filali Rayane - Arbai Ismael - Karim Nassim - Khadri Youness</p>
+    </footer>
 
 </body>
 </html>

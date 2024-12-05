@@ -48,7 +48,8 @@ header h1 {
 }
 
 .navbar a:active{
-    background-color: #294172;
+    background-color: white;
+    color: #294172;
 }
 
 .mainDebian{
@@ -57,8 +58,8 @@ header h1 {
 
 .containerDebian {
     display: flex;
-    gap: 20px;
     justify-content: center;
+    gap: 20px;
     margin: 20px;
 }
 
@@ -70,7 +71,7 @@ header h1 {
     padding: 20px;
     width: 30%;
     text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px grey;
 }
 
 .contentBox h2 {
@@ -101,6 +102,10 @@ header h1 {
 
 #box3 p{
     padding-top: 15px;
+}
+
+#box3 a {
+    color: #007bff;
 }
 
 #box3 a:hover{
@@ -173,6 +178,29 @@ header h1 {
     background-color:#294172;
 }
 
+.download{
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.download a{
+    padding: 15px;
+    background-color: #294172;
+    border-radius: 10px;
+    transition: transform 0.3s, background-color 0.3s;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.download a:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: #3a6b91;
+}
 
 footer {
     background-color: #294172;
@@ -184,7 +212,7 @@ footer {
     font-size: 20px;
 }
 
-/*Responsive*/
+/*Responsive debian*/
 /*for 1024 px*/
 @media (max-width: 1024px) {
     .containerDebian {
@@ -284,9 +312,7 @@ footer {
     padding: 2em;
     margin: 2em auto;
     max-width: 800px;
-    background: white;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 20px;
     background-color: #ebe8e8;
     box-shadow: 10px 5px 5px grey;
@@ -352,9 +378,7 @@ footer {
     padding: 2em;
     margin: 2em auto;
     max-width: 800px;
-    background: white;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-size: 20px;
     background-color: #ebe8e8;
     box-shadow: 10px 5px 5px grey;
@@ -690,8 +714,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 30px;
-    margin:  auto;
-    margin-bottom: 100px;
+    margin: auto auto 100px;
     max-width: 800px;
     text-align: center;
 }
@@ -1356,4 +1379,95 @@ footer {
     .formAntiX button {
         font-size: 1rem;
     }
+}
+
+/***FILALI RAYANE***/
+
+.bodyLinuxMint {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* main section */
+.mainLinuxMint {
+    margin: 20px;
+}
+
+.sectionLinuxMint {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.subtitleLinuxMint {
+    color: #294172;
+}
+
+.textLinuxMint {
+    line-height: 1.6;
+}
+
+.imageLinuxMint {
+    display: inline-block;
+    margin: 20px auto;
+    width: 150px;
+    transition: transform 0.3s;
+}
+.imageLinuxMint:hover{
+    transform: scale(1.1);
+}
+
+
+.tableLinuxMint {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tableLinuxMint th, .tableLinuxMint td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.listLinuxMint {
+    padding-left: 20px;
+}
+
+.formLinuxMint {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.labelLinuxMint {
+    font-weight: bold;
+}
+
+.inputLinuxMint, .textareaLinuxMint, .buttonLinuxMint {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.buttonLinuxMint {
+    background-color: #294172;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+}
+
+.buttonLinuxMint:hover {
+    background-color: #3a6b91;
 }

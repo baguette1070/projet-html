@@ -8,101 +8,121 @@
 </head>
 <body>
 
-<!--Common header-->
-<header>
-    <h1 class="title">Projet - HTML</h1>
-</header>
+    <!-- Common header -->
+    <header>
+        <h1 class="title">Projet - HTML</h1>
+    </header>
 
-<!--Common navbar-->
-<nav class="navbar">
-    <ul>
-        <li><a href="nawfal_lamrini.html">Nawfal</a></li>
-        <li><a href="ilias_himi.html">Ilias</a></li>
-        <li><a href="rayane_filali.html">Rayane</a></li>
-        <li><a href="ismael_arbai.html">Ismael</a></li>
-        <li><a href="nassim_karim.html">Nassim</a></li>
-        <li><a href="youness_khadri.html">Youness</a></li>
-    </ul>
-</nav>
+    <!-- Common navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="nawfal_lamrini.html">Debian</a></li>
+            <li><a href="ilias_himi.html">Ubuntu</a></li>
+            <li><a href="rayane_filali.html">Linux Mint</a></li>
+            <li><a href="ismael_arbai.html">Fedora</a></li>
+            <li><a href="nassim_karim.html">Puppy Linux</a></li>
+            <li><a href="youness_khadri.html">AntiX</a></li>
+        </ul>
+    </nav>
 
-<main class="mainDebian">
-    <section class="containerDebian">
-        <div class="contentBox" id="box1">
-            <h2>Présentation</h2>
-            <p>Debian est une distribution Linux largement utilisée, connue pour sa stabilité et son vaste écosystème de logiciels.</p>
-            <a href="https://www.debian.org/index.fr.html" target="_blank">
-                <img src="./assets/debian/Debian-logo.png" alt="Debian-logo">
-            </a>
-            <p>Cliquez sur le logo juste au dessus pour aller sur le site officiel</p>
+    <main class="mainDebian">
+
+        <!-- flexbox -->
+
+        <section class="containerDebian">
+
+            <!-- Box1 -->
+
+            <div class="contentBox" id="box1">
+                <h2>Présentation</h2>
+                <p>Debian est une distribution Linux largement utilisée, connue pour sa stabilité et son vaste écosystème de logiciels.</p>
+                <a href="https://www.debian.org/index.fr.html" target="_blank">
+                    <img src="./assets/debian/Debian-logo.png" alt="Debian-logo" title="Cliquez sur le logo">
+                </a>
+                <p>Cliquez sur le logo juste au dessus pour aller sur le site officiel de Debian</p>
+            </div>
+
+
+            <!-- Box 2 -->
+
+            <div class="contentBox" id="box2">
+                <h2>Caractéristiques</h2>
+                <table class="tableDebian">
+                    <thead>
+                    <tr>
+                        <th>Caractéristique</th>
+                        <th>Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Origine</td>
+                        <td>1993, Ian Murdock</td>
+                    </tr>
+                    <tr>
+                        <td>Base</td>
+                        <td>Indépendant</td>
+                    </tr>
+                    <tr>
+                        <td>Popularité</td>
+                        <td>Très populaire, utilisé comme base pour Ubuntu</td>
+                    </tr>
+                    <tr>
+                        <td>Poids</td>
+                        <td>Léger, environ 300 MO</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <!-- Box3 -->
+
+            <div class="contentBox" id="box3">
+                <h2>Avantages de Debian</h2>
+                <ol>
+                    <li>Très stable</li>
+                    <li>Grande communauté</li>
+                    <li>Vaste dépôt de logiciels</li>
+                    <li>Support pour de nombreuses architectures matérielles</li>
+                </ol>
+                <p>Apprenez en plus sur les raisons pour lesquelles vous devriez utiliser debian</p>
+                <a href="https://www.debian.org/intro/why_debian.fr.html#:~:text=Debian%20est%20une%20distribution%20faite,d'exploitation%20stable%20et%20s%C3%BBr." target="_blank">En cliquant ici</a>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!--Form debian => method="post"-->
+        <section class="formDebian">
+            <h2>Donnez nous votre avis sur Debian</h2>
+            <div>
+                <form action="#" method="post">
+                    <label for="email">Votre email :</label>
+                    <input placeholder="Entrez votre email" type="email" id="email" name="email" required><br><br>
+                    <label for="mdp">Votre mot de passe : </label>
+                    <input placeholder="Entrez votre mot de passe" type="password" id="mdp" name="mdp"><br><br>
+                    <label for="comment">Votre commentaire :</label><br>
+                    <textarea placeholder="Mettez un commentaire " id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+
+        </section>
+
+        <div class="download">
+            <a href="https://www.debian.org/distrib/" target="_blank">Télécharger Debian</a>
         </div>
 
-        <div class="contentBox" id="box2">
-            <h2>Caractéristiques</h2>
-            <table class="tableDebian">
-                <thead>
-                <tr>
-                    <th>Caractéristique</th>
-                    <th>Description</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Origine</td>
-                    <td>1993, Ian Murdock</td>
-                </tr>
-                <tr>
-                    <td>Base</td>
-                    <td>Indépendant</td>
-                </tr>
-                <tr>
-                    <td>Popularité</td>
-                    <td>Très populaire, utilisé comme base pour Ubuntu</td>
-                </tr>
-                <tr>
-                    <td>Poids</td>
-                    <td>Léger, environ 300 MO</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="contentBox" id="box3">
-            <h2>Avantages de Debian</h2>
-            <ol>
-                <li>Très stable</li>
-                <li>Grande communauté</li>
-                <li>Vaste dépôt de logiciels</li>
-                <li>Support pour de nombreuses architectures matérielles</li>
-            </ol>
-            <p>Apprenez en plus sur les raisons pour lesquelles vous devriez utiliser debian</p>
-            <a href="https://www.debian.org/intro/why_debian.fr.html#:~:text=Debian%20est%20une%20distribution%20faite,d'exploitation%20stable%20et%20s%C3%BBr." target="_blank">En cliquant ici</a>
-        </div>
-    </section>
-
-    <hr>
 
 
-    <!--Form debian => method="post"-->
-    <section class="formDebian">
-        <h2>Donnez nous votre avis sur Debian</h2>
-        <div>
-            <form action="#" method="post">
-                <label for="email">Votre email :</label>
-                <input placeholder="Entrez votre email" type="email" id="email" name="email" required><br><br>
-                <label for="mdp">Votre mot de passe : </label>
-                <input placeholder="Entrez votre mot de passe" type="password" id="mdp" name="mdp"><br><br>
-                <label for="comment">Votre commentaire :</label><br>
-                <textarea placeholder="Mettez un commentaire " id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
-                <button type="submit">Envoyer</button>
-            </form>
-        </div>
-    </section>
-</main>
+    </main>
 
-<!--Common footer-->
-<footer>
-    <p>Lamrini Nawfal - Himi Ilias - Filali Rayane - Arbai Ismael - Karim Nassim - Khadri Youness</p>
-</footer>
+    <!--Common footer -->
+    <footer>
+        <p>Lamrini Nawfal - Himi Ilias - Filali Rayane - Arbai Ismael - Karim Nassim - Khadri Youness</p>
+    </footer>
 
 </body>
 </html>
