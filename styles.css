@@ -803,7 +803,7 @@ footer {
     background-color:#294172;
 }
 
-
+/***Responsive Ubuntu***/
 /*for 1024 px screen*/
 @media (max-width: 1024px) {
     .mainUbuntu {
@@ -1091,7 +1091,7 @@ footer {
 
 
 
-/**********youness khadr**********/
+/**********youness khadri**********/
 
 /* Main container */
 .mainAntiX {
@@ -1268,7 +1268,7 @@ footer {
 }
 
 
-
+/***Responsive AntiX***/
 /*for 1024 px screen*/
 @media (max-width: 1024px) {
     .mainAntiX {
@@ -1470,4 +1470,60 @@ footer {
 
 .buttonLinuxMint:hover {
     background-color: #3a6b91;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .mainLinuxMint {
+        margin: 10px;
+    }
+
+    .sectionLinuxMint {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .subtitleLinuxMint {
+        font-size: 1.2em;
+    }
+
+    .textLinuxMint {
+        font-size: 0.9em;
+    }
+
+    .imageLinuxMint {
+        width: 120px;
+    }
+
+    .tableLinuxMint th, .tableLinuxMint td {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .listLinuxMint {
+        font-size: 0.9em;
+        padding-left: 15px;
+    }
+
+    .inputLinuxMint, .textareaLinuxMint, .buttonLinuxMint {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    .buttonLinuxMint {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .imageLinuxMint {
+        width: 100px;
+        margin: 10px auto;
+    }
+
+    .buttonLinuxMint {
+        width: 100%;
+    }
 }
